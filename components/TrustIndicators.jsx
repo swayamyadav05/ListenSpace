@@ -4,7 +4,32 @@ import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
 const TrustIndicators = ({
-  data,
+  data = [
+    {
+      value: "1000+",
+      label: "Sessions Completed",
+      color: "text-purple-600",
+      badge: "Popular",
+    },
+    {
+      value: "4.9★",
+      label: "Average Rating",
+      color: "text-blue-600",
+      badge: "Rated",
+    },
+    {
+      value: "50+",
+      label: "Trained Listeners",
+      color: "text-green-600",
+      badge: "Expert",
+    },
+    {
+      value: "24/7",
+      label: "Support Available",
+      color: "text-orange-600",
+      badge: "Always On",
+    },
+  ],
   variant = "default",
   size = "lg",
   showBadges = false,
