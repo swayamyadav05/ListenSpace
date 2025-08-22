@@ -1,7 +1,12 @@
 import { Badge } from "@/components/ui/badge";
 import TrustIndicators from "@/components/TrustIndicators";
-import { howItWorksData, trustIndicatorsData } from "@/data";
+import {
+  features,
+  howItWorksData,
+  trustIndicatorsData,
+} from "@/data";
 import HowItWorks from "@/components/HowItWorks";
+import Features from "@/components/Features";
 
 export default function Home() {
   return (
@@ -78,6 +83,22 @@ export default function Home() {
             </p>
           </div>
           <HowItWorks data={howItWorksData} />
+        </div>
+      </section>
+
+      {/* Features */}
+      <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+              Why Choose ListenSpace?
+            </h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+              We&apos;re different from therapy or counseling -
+              we&apos;re here to simply listen
+            </p>
+          </div>
+          <Features data={features} />
         </div>
       </section>
     </>
